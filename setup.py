@@ -12,7 +12,7 @@ description = "Used to fetch OKTA tokens for an application using web a browser 
 
 setup(
     name="okta-token-fetcher",
-    version="0.0.1",
+    version="0.0.2",
     description=description,
     long_description=description,
     author="Mathew Moon",
@@ -30,10 +30,6 @@ setup(
     install_requires=[
         x for x in install_requires if x not in ["boto3", "botocore"]
     ],
-    #package_dir={
-    #    "okta_token_fetcher": "okta_token_fetcher"
-    #},
-    #include_package_data=True,
     entry_points = {
       "console_scripts": [
         "okta-fetch = okta_token_fetcher:run_from_shell"
