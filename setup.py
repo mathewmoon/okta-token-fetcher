@@ -9,16 +9,20 @@ install_requires = [
 ]
 
 description = "Used to fetch OKTA tokens for an application using web a browser that redirects to a commandline server"
+with open("README.md", "r") as f:
+  long_description = f.read()
 
 setup(
     name="okta-token-fetcher",
-    version="0.0.2",
+    version="0.0.3",
     description=description,
-    long_description=description,
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Mathew Moon",
     author_email="me@mathewmoon.net",
     # Choose your license
     python_requires=">=3.8",
+    url="https://github.com/mathewmoon/okta-token-fetcher",
     license="Apache 2.0",
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
