@@ -11,7 +11,7 @@ query parameters that are sent via window.hash (I suppose OKTA does this so that
 
 Note that when using this tool your OKTA JWT will:
 
-  * Be stored in ~/.okta_token (700 file permissions) unless --no-cache is specified
+  * Be stored in ~/.okta_token (600 file permissions) unless --no-cache is specified
   * Be visible in the url bar of your browser for a few seconds
   * Be visible on the page after all of the redirects for 3 seconds before being redirected to a final page in your browser
 
